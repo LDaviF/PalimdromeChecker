@@ -1,10 +1,3 @@
-
-/*
-function palindrome(){
-    document.getElementById('text').innerHTML = "True";
-}
-*/
-
 function palindrome() {
     let Finput = window.document.getElementById('word');
     var str = String(Finput.value)
@@ -15,8 +8,10 @@ function palindrome() {
     str2 = str2.join("")
     if(cleanedStr == str2){
         document.getElementById('text').innerHTML = "True";
+        document.getElementById('text').style.background = '#ffcc66';
     } else {
-        return document.getElementById('text').innerHTML = "False";
+        document.getElementById('text').innerHTML = "False";
+        document.getElementById('text').style.background = '#ff9966';
     }
 }
 
